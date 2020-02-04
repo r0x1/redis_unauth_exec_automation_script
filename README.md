@@ -2,6 +2,13 @@
 
 redis_unauth_exec 自动化脚本
 
+### 流程
+
+shodan api -> sqlite -> python-masscan -> sqlite -> python-nmap -> sqlite -> pymetasploit -> sqlite
+
+
+### 说明
+
 5个可独立运行的脚本，可以同时运行，通过sqlite数据库交互数据。可以做个计划任务，间隔几小时运行一次，查询到新的可用ip和端口数据，就自动用redis_unauth_exec漏洞检测。
 
 - 1_get_ip_from_shodan.py：从shodan上获取 "product:redis" 数据，存入shodan_data表。
@@ -14,8 +21,4 @@ redis_unauth_exec 自动化脚本
 
 - 5_exploit_target_redis_table.py：从redis_target表中读取数据，判断redis的版本，如果是4.x-5.x，用pymetasploit攻击，如果攻击成功，将redis_target表的is_exploited字段值改为1 （初始值为0）。
 
-
-#### 备注
-
-- 在《2_prase_shodan_data_to_ip_all_table.py》中忽略了部分IP，避免误伤，"CHN"、"HKG"、"TWN"。
 
