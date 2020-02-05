@@ -2,7 +2,7 @@
 # coding=utf-8
 
 import sqlite3
-# from numpy import inf
+from numpy import inf
 
 # 定义数据库连接
 global _conn
