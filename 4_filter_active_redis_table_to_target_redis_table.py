@@ -120,7 +120,7 @@ def main():
         init_sqlite()
 
         # 每页数据数量
-        page_size = 4
+        page_size = 10
         # 页码
         page_index = 0
 

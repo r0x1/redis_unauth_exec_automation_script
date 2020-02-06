@@ -158,7 +158,7 @@ def main():
 
                 # 在这里用masscan扫描ip和port
                 try:
-                    mas.scan('', ports=_ports, arguments='--includefile {} --max-rate 1000'.format(_temp_filename))
+                    mas.scan('', ports=_ports, arguments='--includefile {} --max-rate 100'.format(_temp_filename))
 
                 except Exception as e:
                     # network is unreachable.
