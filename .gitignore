@@ -1,3 +1,4 @@
-*.txt
-TEST_*
-TEST_*
+/active_ip_temp.txt
+/attack_ip_temp.txt
+/TEST_5_exploit_target_redis_table.py
+/TEST_sqlite.db
