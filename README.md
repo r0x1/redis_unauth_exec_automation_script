@@ -1,8 +1,10 @@
 # redis_unauth_exec_automation_script
 
-> v0.0.1
+
 
 A batch processing and automation python script for Redis Unauthenticated Code Execution.
+
+[![Python](https://img.shields.io/badge/python-3.7-brightgreen.svg)](https://www.python.org/)
 
 
 ### Description
@@ -70,7 +72,7 @@ root@kali:/# python3 4_filter_active_redis_table_to_target_redis_table.py
     SELECT * FROM redis_target where is_exploited=1
     ```
 
-### Example : 
+### Example
 
 ```bash
 root@kali:/# python3 5_exploit_target_redis_table.py 
@@ -386,3 +388,9 @@ IPv4 Netmask : 255.255.0.0
 kill msfrpcd.
 ------------------------------  done.  ------------------------------
 ```
+
+### Thanks
+https://github.com/rapid7/metasploit-framework
+https://github.com/MyKings/python-masscan
+https://bitbucket.org/xael/python-nmap
+https://blog.csdn.net/Tong_T/article/details/80603378
