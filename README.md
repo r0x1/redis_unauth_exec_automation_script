@@ -1,11 +1,8 @@
 # redis_unauth_exec_automation_script
 
-
-
 A batch processing and automation python script for Redis Unauthenticated Code Execution.
 
 [![Python](https://img.shields.io/badge/python-3.7-brightgreen.svg)](https://www.python.org/)
-
 
 ### Description
 1. Here are 5 python scripts, each one can be used independently.
