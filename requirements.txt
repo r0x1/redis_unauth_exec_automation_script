@@ -1,5 +1,5 @@
-python-masscan==0.1.6
-python-nmap==0.6.1
-pymetasploit3==1.0.2
-shodan==1.21.3
-numpy==1.17.2
+python-masscan
+python-nmap
+pymetasploit3
+shodan
+numpy
